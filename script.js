@@ -16,10 +16,22 @@ function dibujarLinea (xi,yi,xf,yf) {
     plano.closePath();
 };
 
+function getColor() {
+    let caracteres = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; ++i) {
+        color += caracteres[Math.floor(Math.random() * 16)];
+    };
+    return color;
+}
+
 function submitClick () {
     const inputX = document.getElementById('coordInputX').value;
     const inputY = document.getElementById('coordInputY').value;
-    colocarPunto(inputX,inputY,5,'#f00');
+    let randomColor = getColor()
+    if (inputX >= -400 && inputX <= 400 && inputY >= -400 && inputY <= 400) colocarPunto(inputX,inputY,5,randomColor)
+    else console.log('El valor ingresado debe de ser cualquier número entre -400 y 400');
+
 };
 
 function enter (tecla) {
@@ -33,22 +45,22 @@ let y = -50;
 
 const plano = document.getElementById('plano').getContext("2d");
 plano.save();
-plano.translate(300,300);
+plano.translate(400,400);
 
-let coordX = -300;
-let coordY = 300;
+let coordX = -400;
+let coordY = 400;
 let radio = 1;
 let color = "#000";
 
-dibujarLinea(300,0,-300,0);
-dibujarLinea(0,300,0,-300);
+dibujarLinea(400,0,-400,0);
+dibujarLinea(0,400,0,-400);
 
-for (i = 1; i <= 169; ++i) {
+for (let i = 1; i <= 289; ++i) {
     colocarPunto(coordX, coordY, radio, color);
     coordX += 50;
-    if (i % 13 == 0) {
+    if (i % 17 == 0) {
         coordY -= 50
-        coordX = -300
+        coordX = -400
     };
 };
 

@@ -4,8 +4,9 @@
     padding: 0;
 }
 canvas {
-
-position: absolute;
+    position: absolute;
+    background-color: #c3c3c3;
+    box-shadow: 10px 10px 31px -7px rgba(0,0,0,0.62);
 }
 
 .wrapper {
@@ -17,13 +18,9 @@ position: absolute;
 }
 
 .plano {
-    height: 600px;
-    width: 600px;
+    height: 800px;
+    width: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-canvas {
-    border: 2px solid green;
 }
