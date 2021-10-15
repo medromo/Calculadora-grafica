@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'> <!--Para trabajar con sitios responsive y poder tener la referencia del viewport-->
+        <meta name='robots' content='index,follow'>   <!-- Es para permitir a los robots como el de google indexar nuestra página en los resultados -->
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <title>Calculadora Gráfica</title>
+        <meta name='description' content='Prueba técnica del programa Platzi Master, calculadora gráfica'>
+    </head>
+    <body>
+        <div class="input" id="coordInputs">
+            <input type="number" id="coordInputX">
+            <input type="number" id="coordInputY">
+            <button id="submit">Enviar</button>
+            <button id="reiniciar">Volver a Empezar</button>
+        </div>
+        <div class="wrapper">
+            <div class="plano">
+                <canvas id='plano' height='600' width='600'></canvas>
+            </div>
+        </div>   
+        <script src="script.js"></script>           
+    </body>
+    </html>
