@@ -24,3 +24,7 @@ export function getColor() {
     };
     return color;
 };
+
+export function clearCanvas (xi, yi, canvas, ctx) {
+    ctx.clearRect(xi, yi, canvas.width, -canvas.height)
+}

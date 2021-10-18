@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'> <!--Para trabajar con sitios responsive y poder tener la referencia del viewport-->
+        <meta name='robots' content='index,follow'>   <!-- Es para permitir a los robots como el de google indexar nuestra página en los resultados -->
+        <link rel='stylesheet' type='text/css' href='barras.css'>
+        <title>Gráfica de barras</title>
+        <meta name='description' content='Prueba técnica del programa Platzi Master, calculadora gráfica'>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Calculadora Gráfica</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="./plano.html">Plano Cartesiano</a></li>
+                    <li><a href="./barras.html">Barras</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="warning" class="warning-container">
+                <div>
+                    <span class="minmax-warning">Ingresa solo valores entre 1 y 15</span>
+                </div>
+            </div>
+            <div class="wrapper" id="wrapper">
+                <form>
+                    <div id="contenedor-inputs">
+                        <h2>Barra 1</h2>
+                        <label for="barra1x">
+                            <span>Ingresa el valor de X:</span>
+                            <input type="number" name="barra1x" id="barra1x" class="inputs valores X" min="0" max="15" value="1">
+                        </label>
+                        <label for="barra1y">
+                            <span>Ingresa el valor de Y:</span>
+                            <input type="number" name="barra1y" id="barra1y" class="inputs valores Y" min="0" max="16">
+                        </label>
+                        <label for="color1">
+                            <span>Selecciona un color:</span>
+                            <input type="color" class="colores inputs" name="color1" id="color1" value="#ef562c">
+                        </label>
+                        <hr class="rounded">
+
+                        <h2>Barra 2</h2>
+                        <label for="barra2x">
+                            <span>Ingresa el valor de X:</span>
+                            <input type="number" name="barra2x" id="barra2x" class="inputs valores X" min="0" max="15" value="2">
+                        </label>
+                        <label for="barra2y">
+                            <span>Ingresa el valor de Y:</span>
+                            <input type="number" name="barra2y" id="barra2y" class="inputs valores Y" min="0" max="16">
+                        </label>
+                        <label for="color2">
+                            <span>Selecciona un color:</span>
+                            <input type="color" class="colores inputs" name="color2" id="color2" value="#88b24b">
+                        </label>
+                        <hr class="rounded">
+
+                        <h2>Barra 3</h2>
+                        <label for="barra3x">
+                            <span>Ingresa el valor de X:</span>
+                            <input type="number" name="barra3x" id="barra3x" class="inputs valores X" min="0" max="15" value="3">
+                        </label>
+                        <label for="barra3y">
+                            <span>Ingresa el valor de Y:</span>
+                            <input type="number" name="barra3y" id="barra3y" class="inputs valores Y" min="0" max="16">
+                        </label>
+                        <label for="color3">
+                            <span>Selecciona un color:</span>
+                            <input type="color" class="colores inputs" name="color3" id="color3" value="#5587a2">
+                        </label>
+                        <hr class="rounded">
+
+                        <h2>Barra 4</h2>
+                        <label for="barra4x">
+                            <span>Ingresa el valor de X:</span>
+                            <input type="number" name="barra4x" id="barra4x" class="inputs valores X" min="0" max="15" value="4">
+                        </label>
+                        <label for="barra4y">
+                            <span>Ingresa el valor de Y:</span>
+                            <input type="number" name="barra4y" id="barra4y" class="inputs valores Y" min="0" max="16">
+                        </label>
+                        <label for="color4">
+                            <span>Selecciona un color:</span>
+                            <input type="color" class="colores inputs" name="color4" id="color4" value="#f6d357">
+                        </label>
+                        <hr class="rounded">
+
+                        <h2>Barra 5</h2>
+                        <label for="barra5x">
+                            <span>Ingresa el valor de X:</span>
+                            <input type="number" name="barra5x" id="barra5x" class="inputs valores X" min="0" max="15" value="5">
+                        </label>
+                        <label for="barra5y">
+                            <span>Ingresa el valor de Y:</span>
+                            <input type="number" name="barra5y" id="barra5y" class="inputs valores Y" min="0" max="16">
+                        </label>
+                        <label for="color5">
+                            <span>Selecciona un color:</span>
+                            <input type="color" class="colores inputs" name="color5" id="color5" value="#174c8a">
+                        </label>
+                        <hr class="rounded">
+                    </div>
+                    <button type="button" id="reset">Reiniciar</button>
+                </form>
+                <div class="lienzo">
+                    <canvas id='barras' height='800' width='800'></canvas>
+                </div>
+            </div>
+        </main>  
+        <script type="module" src="barras.js"></script>           
+    </body>
+    </html>

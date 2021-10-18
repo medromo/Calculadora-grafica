@@ -9,17 +9,28 @@
         <meta name='description' content='Prueba técnica del programa Platzi Master, calculadora gráfica'>
     </head>
     <body>
-        <div class="input" id="coordInputs">
-            <input type="number" id="coordInputX">
-            <input type="number" id="coordInputY">
-            <button id="submit">Enviar</button>
-            <button id="reiniciar">Volver a Empezar</button>
-        </div>
-        <div class="wrapper">
-            <div class="plano">
-                <canvas id='plano' height='800' width='800'></canvas>
+        <header>
+            <h1>Calculadora Gráfica</h1>
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="./plano.html">Plano Cartesiano</a></li>
+                    <li><a href="./barras.html">Barras</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="input" id="coordInputs">
+                <input type="number" id="coordInputX">
+                <input type="number" id="coordInputY">
+                <button id="submit">Enviar</button>
+                <button id="reiniciar">Volver a Empezar</button>
             </div>
-        </div>   
+            <div class="wrapper">
+                <div class="plano">
+                    <canvas id='plano' height='800' width='800'></canvas>
+                </div>
+            </div>
+        </main> 
         <script type="module" src="plano.js"></script>           
     </body>
     </html>
