@@ -66,12 +66,12 @@ h2 {
     border-radius: 15px;
     color: #fff;
     font-size: 1.8rem;
-    background-color: #789be1;
+    background-color:#4eb5f1;
 }
 
 #reset:hover {
     width: 160px;
     height: 60px;
-    background-color: #5782d8;
+    background-color:#4095c6;
     cursor: pointer;
 }

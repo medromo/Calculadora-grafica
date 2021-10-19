@@ -25,31 +25,31 @@
                     <span class="minmax-warning">Ingresa solo valores entre -400 y 400</span>
                 </div>
             </div>
-
-            <form class="input" id="coordInputs">
-                <div class="input_wrapper">
-                <label for="coordInputX">
-                    <span>Ingresa el valor de X:</span>
-                    <input name="coordInputX" type="number" id="coordInputX">
-                </label>
-                <label for="coordInputY">
-                    <span>Ingresa el valor de Y:</span>
-                    <input name="coordInputY" type="number" id="coordInputY">
-                </label>
-                </div>
-                <div class="botones">
-                    <div>
-                        <button type="button" id="submit">Enviar</button>
+            <div class="main-container">
+                <form class="input" id="coordInputs">
+                    <h2>¡Vamos a graficar!</h2>
+                    <label for="coordInputX">
+                        <span>Ingresa el valor de X:</span>
+                        <input name="coordInputX" type="number" id="coordInputX">
+                    </label>
+                    <label for="coordInputY">
+                        <span>Ingresa el valor de Y:</span>
+                        <input name="coordInputY" type="number" id="coordInputY">
+                    </label>
+                    <div class="botones">
+                        <div>
+                            <button type="button" id="submit">Dibujar</button>
+                        </div>
+                        <div>
+                            <button type="button" id="reiniciar">Reiniciar</button>
+                        </div>
                     </div>
-                    <div>
-                        <button type="button" id="reiniciar">Reiniciar</button>
+                </form>
+            
+                <div class="wrapper">
+                    <div class="plano">
+                        <canvas id='plano' height='800' width='800'></canvas>
                     </div>
-                </div>
-            </form>
-
-            <div class="wrapper">
-                <div class="plano">
-                    <canvas id='plano' height='800' width='800'></canvas>
                 </div>
             </div>
         </main> 

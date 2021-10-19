@@ -8,9 +8,15 @@ canvas {
     box-shadow: 10px 10px 31px -7px rgba(0,0,0,0.62);
 }
 
+.main-container {
+    display: flex;
+    align-items: stretch;
+    padding: 50px 0 0 60px;
+}
+
 .wrapper {
     display: flex;
-    height: 100vh;
+    height: 800px;
     width: 100vw;
     align-items: center;
     justify-content: center;
@@ -22,6 +28,7 @@ canvas {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
 }
 
 .input {
@@ -31,7 +38,59 @@ canvas {
     align-items: center;
 }
 
-.input label, button{
+.input h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.input span {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.input input {
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #5782d8;
+    text-align: center;
+}
+
+.input label {
+    text-align: center;
+}
+
+.botones {
+    text-align: center;
+}
+
+.botones button {
+    height: 60px;
+    width: 135px;
+    color: #fff;
+    font-size: 1.8rem;
+    background-color:#4eb5f1;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
+}
+
+.botones div {
+    width: 200px;
+    height: 70px;
+}
+
+.botones button:hover {
+    height: 65px;
+    width: 140px;
+    background-color:#4095c6;
+    cursor: pointer;
+}
+
+
+/* .input label, button{
     display: block;
 }
 
@@ -43,10 +102,6 @@ canvas {
     border: none;
 }
 
-.input input {
-    width: 130px;
-    border: 1px solid #5782d8;
-}
 
 .input_wrapper {
     display: flex;
@@ -83,4 +138,4 @@ canvas {
     height: 45px;
     background-color: #5782d8;
     cursor: pointer;
-}
+} */
