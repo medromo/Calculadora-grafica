@@ -4,6 +4,7 @@
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'> <!--Para trabajar con sitios responsive y poder tener la referencia del viewport-->
         <meta name='robots' content='index,follow'>   <!-- Es para permitir a los robots como el de google indexar nuestra página en los resultados -->
+        <link rel='stylesheet' type='text/css' href='main-style.css'>
         <link rel='stylesheet' type='text/css' href='plano.css'>
         <title>Calculadora Gráfica</title>
         <meta name='description' content='Prueba técnica del programa Platzi Master, calculadora gráfica'>
@@ -19,12 +20,33 @@
             </nav>
         </header>
         <main>
-            <div class="input" id="coordInputs">
-                <input type="number" id="coordInputX">
-                <input type="number" id="coordInputY">
-                <button id="submit">Enviar</button>
-                <button id="reiniciar">Volver a Empezar</button>
+            <div id="warning" class="warning-container">
+                <div>
+                    <span class="minmax-warning">Ingresa solo valores entre -400 y 400</span>
+                </div>
             </div>
+
+            <form class="input" id="coordInputs">
+                <div class="input_wrapper">
+                <label for="coordInputX">
+                    <span>Ingresa el valor de X:</span>
+                    <input name="coordInputX" type="number" id="coordInputX">
+                </label>
+                <label for="coordInputY">
+                    <span>Ingresa el valor de Y:</span>
+                    <input name="coordInputY" type="number" id="coordInputY">
+                </label>
+                </div>
+                <div class="botones">
+                    <div>
+                        <button type="button" id="submit">Enviar</button>
+                    </div>
+                    <div>
+                        <button type="button" id="reiniciar">Reiniciar</button>
+                    </div>
+                </div>
+            </form>
+
             <div class="wrapper">
                 <div class="plano">
                     <canvas id='plano' height='800' width='800'></canvas>

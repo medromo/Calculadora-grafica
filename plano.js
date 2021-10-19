@@ -31,8 +31,10 @@ function submitClick () {
     const inputX = document.getElementById('coordInputX').value;
     const inputY = document.getElementById('coordInputY').value;
     let randomColor = modulo.getColor()
-    if (inputX >= -400 && inputX <= 400 && inputY >= -400 && inputY <= 400) modulo.colocarPunto(lienzo,inputX,inputY,5,randomColor)
-    else console.log('El valor ingresado debe de ser cualquier número entre -400 y 400');
+    if (inputX >= -400 && inputX <= 400 && inputY >= -400 && inputY <= 400) {
+        modulo.colocarPunto(lienzo,inputX,inputY,5,randomColor);
+        warning.style.display = 'none';
+    } else warning.style.display = 'flex';
 
 };
 

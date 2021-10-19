@@ -70,10 +70,12 @@ function graficar () {
 };
 
 function drawBar (x, y, color = modulo.getColor()) {
-    x = x*50-25
-    y = y*50
-    lienzo.fillStyle = color;
-    lienzo.fillRect(x,0,50,-y);
+    if (x != "" && y != "") {
+        x = x*50-25
+        y = y*50
+        lienzo.fillStyle = color;
+        lienzo.fillRect(x,0,50,-y);
+    };
 };
 
 function limpiarLienzo () {
