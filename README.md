@@ -3,6 +3,7 @@ Bienvenido ¡Juguemos a dibujar!
 ## Descripción
 Este es el repositorio de la calculadora gráfica, en donde podrás dibujar puntos en un plano cartesiano de 800px  X  800px. Y a demás crear una gráfica de barras !Con hasta 5 juegos de valores!
 ## Instrucciones
+Para ingresar da click aquí: https://github.com/rolmed91/Calculadora-grafica/deployments/activity_log?environment=github-pages
 ### Iniciando, dibujar en el plano cartesiano
 1. Para empezar a dibujar, primero accede a la página principal en este link:
 2. Directamente en la página principal puedes comenzar a dibujar en un **plano cartesiano** de 800 x 800 píxeles. En la parte izquierda de la pantalla te aparecen dos campos etiquetados para ingresar los valores de las coordenadas X y Y. **Debes ingresar valores entre -400 y 400 para cada eje.**
